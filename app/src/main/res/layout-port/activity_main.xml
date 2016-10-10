@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/background_dark">
+        android:background="@android:color/background_dark"
+        android:collapseColumns="*">
 
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp">
 
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
-                android:id="@+id/etProceso"
+                android:id="@+id/textView"
                 android:layout_weight="1"
                 android:layout_height="80dp"
                 android:textColor="@android:color/background_light"
                 android:gravity="right|center_vertical|bottom"
-                tools:text="256"
+                tools:text="0"
                 android:textSize="55sp"
                 android:editable="false"
                 android:textColorLink="@android:color/background_dark"
@@ -34,7 +38,9 @@
             android:orientation="vertical"
             android:layout_weight="1"
             android:layout_marginBottom="0.5dp"
-            android:layout_marginTop="0.5dp">
+            android:layout_marginTop="0.5dp"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp">
 
             <Button
                 android:text="7"
@@ -88,7 +94,9 @@
             android:layout_height="70dp"
             android:layout_weight="1"
             android:layout_marginBottom="0.5dp"
-            android:layout_marginTop="0.5dp">
+            android:layout_marginTop="0.5dp"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp">
 
             <Button
                 android:text="4"
@@ -141,7 +149,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginBottom="0.5dp"
-            android:layout_marginTop="0.5dp">
+            android:layout_marginTop="0.5dp"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp">
 
             <Button
                 android:text="1"
@@ -195,7 +205,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginBottom="0.5dp"
-            android:layout_marginTop="0.5dp">
+            android:layout_marginTop="0.5dp"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp">
 
             <Button
                 android:text="+/-"
@@ -249,7 +261,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginBottom="0.5dp"
-            android:layout_marginTop="0.5dp">
+            android:layout_marginTop="0.5dp"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp">
 
             <Button
                 android:text="CE"
@@ -282,7 +296,8 @@
                 android:background="?attr/colorButtonNormal"
                 android:layout_marginRight="0.5dp"
                 android:layout_marginLeft="0.5dp"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:maxLines="1" />
 
             <Button
                 android:text="="
