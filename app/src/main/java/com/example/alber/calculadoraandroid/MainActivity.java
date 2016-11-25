@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -253,5 +252,15 @@ public class MainActivity extends AppCompatActivity {
             resultado = Math.sqrt(numero1);
             etProceso.setText(String.valueOf(resultado));
         }catch (NullPointerException e){}
+    }
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        outState.putDouble("CONT", resultado);
+    }
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+        resultado = savedInstanceState.getDouble("CONT");
+        etProceso.setText(String.valueOf(resultado));
     }
 }
